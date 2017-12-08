@@ -1,0 +1,47 @@
+html *{
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+body{
+    font: 20px "times new roman", times, serif;
+    background-color: azure;
+    margin: 15px;
+    padding: 25px, 45px;
+    border: double;
+}
+
+p , h1{
+    padding: 5px;
+}
+
+.special {
+    background-color: aqua;
+    border: dotted;
+    border-color: cornflowerblue;
+    margin: 4px, 6px;
+    padding: 7px, 9px;
+}
+
+aside {
+    text-align: right;
+    float: right1;
+}
+
+header {
+    text-align: center;
+    margin: 15px;
+    
+}
+
+footer {
+    border: single;
+}
+
+@media screen and (min-width: 600px){
+    
+}

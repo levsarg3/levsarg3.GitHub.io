@@ -1,0 +1,127 @@
+/* Font Family importing*/
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+/* Body Stylings */
+* {
+box-sizing: border-box; /* changes width property
+to total width instead of content width */
+}
+*:before, *:after{
+box-sizing: border-box;
+}
+
+main {
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+}
+
+.background {
+background-image: url("images/sunny-winter.jpg");
+background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: Sansita, "second choice", generic-family;
+}
+
+/* Navigation Bar Styling*/
+nav ul {
+display: flex;
+list-style: none;
+justify-content: space-between;
+}
+
+nav li {
+font-size: 10px
+margin: 3px;
+}
+nav {
+position: relative;
+padding: 3px;
+left: 0;
+right: 0;
+background:#0e89d5;
+}
+
+nav a:link {
+text-decoration: none;
+color: #FFF;
+}
+
+nav a:visited {
+color: #D8F;
+}
+
+nav a:hover,a:focus {
+color:#0E89D5;
+}
+
+nav a:active {
+color: default;
+}
+
+/*Other Stylings for Franklin Weather Page*/
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+display: block; /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+}
+
+body {
+margin: 0; /* remove any margin from body */
+padding: 0; /* ditto for padding */
+font-family: 'Helvetica', sans-serif;
+font-size: 20px;
+}
+
+/* Classes */
+.site-name {
+display: flex;
+flex-wrap: nowrap;
+font-size: 2em;
+font-weight: 600;
+}
+
+.cur_conditions {
+background-color: rgba(200,200,200,.6);
+margin: .2em auto;
+border: 1px solid;
+border-radius: 5px;
+}
+
+.overview {
+background-color: rgba(200,200,200,.6);
+margin: .2em auto;
+border: 1px solid;
+border-radius: 5px;
+}
+
+/* Media Queries */
+/*For Mobile */
+@media only screen and (min-width: 700px)
+{
+
+}
+
+/*For Desktop */
+@media only screen and (max-width: 700px)
+{
+    .col1 {}
+    .col2 {}
+    .col3 {}
+
+}

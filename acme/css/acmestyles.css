@@ -1,6 +1,5 @@
 header {
-    background-color: #ffff;
-    padding: 3px, solid;
+    padding: 3px;
 }
 
 body {
@@ -19,6 +18,11 @@ footer {
     text-align: center;
 }
 
+footer p {
+    flex-flow: column;
+    align-items: center;
+}
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -32,9 +36,9 @@ nav ul {
 }
 
 nav li {
+
     align-items:left;
     font-size: 10px margin: 3px;
-
 }
 
 a:hover {

@@ -1,0 +1,49 @@
+header {
+    background-color: #ffff;
+    padding: 3px, solid;
+}
+
+body {
+    background-image: url("/acme/images/site/background.jpg");
+    font-family: helvetica;
+}
+
+main {
+    background-color: #fff;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    border-top: solid 3px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding-left: 0;
+    padding-right: 100px;
+    margin-left: 0;
+    background-color: #de2226;
+    list-style-type: none;
+}
+
+nav li {
+    align-items:left;
+    font-size: 10px margin: 3px;
+
+}
+
+a:hover {
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 700px) {
+
+    nav ul {
+        padding-right: 50%
+    }
+}

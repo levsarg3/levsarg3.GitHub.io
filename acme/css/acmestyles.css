@@ -37,8 +37,8 @@ nav ul {
 
 nav li {
 
-    align-items:left;
-    font-size: 10px margin: 3px;
+    align-items:flex-start;
+    margin: 3px;
 }
 
 a:hover {

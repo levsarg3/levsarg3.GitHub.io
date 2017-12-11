@@ -12,6 +12,10 @@ main {
     padding: 5px;
 }
 
+img {
+    display: flex;
+}
+
 footer {
     display: flex;
     border-top: solid 3px;
@@ -41,8 +45,23 @@ nav li {
     margin: 3px;
 }
 
+.recipes img {
+    border: solid 10px #808080;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: underline;
+    color: #0000ee;
+}
+
 a:hover {
     background-color: #fff;
+    color: #de2226;
+
 }
 
 @media only screen and (min-width: 700px) {

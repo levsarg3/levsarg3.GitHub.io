@@ -13,7 +13,8 @@ main {
 }
 
 img {
-    display: flex;
+    max-width: 100%;
+
 }
 
 footer {
@@ -45,18 +46,32 @@ nav li {
     margin: 3px;
 }
 
+#home-content img{
+    display: flex;
+}
 .recipes img {
     border: solid 10px #808080;
+}
+
+.recipes li {
+    max-width: 45%;
 }
 
 .recipes {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     list-style-type: none;
     text-decoration: underline;
     color: #0000ee;
 }
+
+.rocket-text li{
+    color: #990033;
+    list-style-type: none;
+}
+
+
 
 a:hover {
     background-color: #fff;
@@ -64,9 +79,26 @@ a:hover {
 
 }
 
+footer {
+    display: flex;
+    flex-flow: nowrap;
+}
+
 @media only screen and (min-width: 700px) {
 
     nav ul {
         padding-right: 50%
+    }
+
+    .home-content img {
+        padding-right: 50%;
+    }
+
+    #flexrecipes, .flexreviews {
+        max-width: 45%;
+        justify-content: center;
+    }
+    #flexr {
+        display: flex;
     }
 }

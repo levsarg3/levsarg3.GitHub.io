@@ -6,6 +6,8 @@
     <title>Home | Acme, Inc.</title>
     <meta name="viewport" content="width=device-width">
     <link href="/acme/css/acmestyles.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/acme.js"></script>
 </head>
 
 <!-- *********************************************
@@ -17,20 +19,20 @@
 * 5.
 * ******************************************** -->
 
-<body>
+<body onload="getNav()">
     <main>
         <header>
             <img src="/acme/images/site/logo.png" alt="ACME logo">
         </header>
 
-        <nav>
+        <nav id="acme-nav">
         </nav>
 
         <section id="home-content">
             <h1>Welcome to ACME!</h1>
             <img src="images/site/feature.jpg" title="Will-E-Coyote on a rocket" alt="Will-E-Coyote's favorite rocket">
 
-            <ul>
+            <ul class="rocket-text">
                 <li><h2>Acme Rocket</h2></li>
                 <li>Quick lighting fuse</li>
                 <li>NHTSA approved seat belts</li>
@@ -38,6 +40,8 @@
                 <li><a href="#"><img id="actionbtn" alt="Add to cart button" src="/acme/images/site/iwantit.gif"></a></li>
             </ul>
 
+            <div id="flexr">
+            <section id= "flexrecipes">
             <h2>Featured Recipes</h2>
             <ul class="recipes">
                 <li><img src="images/recipes/bbqsand.jpg" alt="BBQ sandwhich"><a>Pulled Roadrunner BBQ</a></li>
@@ -45,7 +49,9 @@
                 <li><img src="images/recipes/soup.jpg" alt="roadrunner soup"><a>Roadrunner Soup</a></li>
                 <li><img src="images/recipes/taco.jpg" alt="roadrunner tacos"><a>Roadrunner Taco</a></li>
             </ul>
+            </section>
 
+            <section class="flexreviews">
             <h2>Acme Rocket Reviews</h2>
             <ul>
                 <li>I don't know how I ever caught roadrunners before this." (9/10)</li>
@@ -54,6 +60,8 @@
                 <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
                 <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
             </ul>
+            </section>
+            </div>
 
         </section>
 
@@ -62,7 +70,7 @@
 
         </section>
         <footer>
-            <p>&copy; 2017 ACME Inc., All rights reserved.All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
+            <p>&copy; 2017 ACME Inc., All rights reserved.<br>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</p>
         </footer>
     </main>
 </body>

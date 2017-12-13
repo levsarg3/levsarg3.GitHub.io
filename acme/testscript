@@ -1,0 +1,11 @@
+$.ajax({
+url: "/acme/js/acme.json",
+dataType: "json",
+success: function (data) {
+console.log(data);
+
+var name = data[jsonProduct].name;
+var path = data[jsonProduct].path;
+var description = data[jsonProduct].description;
+var manufacturer = data[jsonProduct].manufacturer;
+var price = data[jsonProduct].price;

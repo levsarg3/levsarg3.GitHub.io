@@ -2,10 +2,16 @@
 function getNav() {
     //Grab data from .json file
     $.ajax({
-        url: "/acme/js/acme.json"
-        , dataType: "json"
-        , success: function (data){
+        url: "/acme/js/acme.json",
+        dataType: "json",
+        success: function (data) {
             console.log(data);
+
+            var name = data[jsonProduct].name;
+            var path = data[jsonProduct].path;
+            var description = data[jsonProduct].description;
+            var manufacturer = data[jsonProduct].manufacturer;
+            var price = data[jsonProduct].price;
 
 
         }
@@ -13,20 +19,27 @@ function getNav() {
 }
 
 
+// Intercept the menu link clicks
 $("#acme-nav").on("click", "a", function (evt) {
     evt.preventDefault();
-    // With the text value get the needed value from the acme.json file
-    var jsonProduct = $(this).text(); // Franklin, etc...
+
+    var jsonProduct = $(this).text();
     console.log(jsonProduct);
     $.ajax({
         url: "/acme/js/acme.json"
         , dataType: "json"
         , success: function (data) {
             console.log(data);
-            console.log(data[jsonCity]);
-            var zip = data[jsonCity].zip;
-            console.log(zip);
-            getData(zip);
-        }
+            var name = data[jsonProduct].name;
+            var path = data[jsonProduct].path;
+            var description = data[jsonProduct].description;
+            var manufacturer = data[jsonProduct].manufacturer;
+            var price = data[jsonProduct].price;
+            var reviews = data[jsonProduct].reviews;
+        };
+
     });
 });
+
+
+
